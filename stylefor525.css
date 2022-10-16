@@ -1,0 +1,118 @@
+/*only use for background of the whole page*/
+body {
+	background: #000000;
+}
+/*main body style - use on multiple pages*/
+#main {
+	width: 800px;
+	height: auto;
+	text-align: center;
+	font-size: 13px;
+	color: black;
+	background: rgb(218, 216, 227);
+	font-family: Verdana, Helvetica;
+	margin: 25px auto;
+	border: solid 4px #ffffff;
+	padding: 15px;
+	overflow: auto;
+}
+/*both header and footer - any difference I want from the main and body*/
+#header {
+	background: #ccccff;
+}
+#foot {
+	color: white;
+}
+/* hover button */
+.button {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 3px 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#p2 {
+	text-align: left;
+}
+
+/*box model for resource page - mi bridges section*/
+#mainb {
+	width: 600px;
+	height: auto;
+	text-align: center;
+	font-size: 11px;
+	background: #dcdcdc;
+	font-family: Verdana, Helvetica;
+	margin: 35px auto;
+	border: solid 8px #000000;
+	padding: 10px;
+	overflow: scroll;
+}
+
+#mainc {
+	width: 550px;
+	height: auto;
+	text-align: center;
+	font-size: 12px;
+	background: hwb(0 100% 0%);
+	font-family: Verdana, Helvetica;
+	margin: 35px auto;
+	border: solid 4px #5308a8;
+	padding: 10px;
+	overflow: auto;
+}
+
+#rstable {
+  font-family: Verdana, Helvetica;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#rstable td, #rstable th {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+#rstable tr:nth-child(even){background-color: #f2f2f2;}
+
+#rstable tr:hover {background-color: rgb(139, 115, 146);}
+
+#rstable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #6810a3;
+  color: white;
+}
